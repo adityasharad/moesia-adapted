@@ -52,8 +52,9 @@ function moesia_post_nav() {
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'moesia' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'moesia' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'moesia' ) );
+			// add boolean parameter to show next/previous post within the same category
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'moesia' ), true );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link', 'moesia' ), true );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
