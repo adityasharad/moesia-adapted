@@ -292,7 +292,7 @@ function moesia_custom_styles($custom) {
 	$primary_color = esc_html(get_theme_mod( 'primary_color' ));
 	if ( isset($primary_color) && ( $primary_color != '#ff6b53' )) {
 		$custom .= ".post-navigation .nav-previous, .post-navigation .nav-next, .paging-navigation .nav-previous, .paging-navigation .nav-next, .comment-respond input[type=\"submit\"], ::selection { background-color: {$primary_color}; }"."\n";
-		$custom .= ".main-navigation a:hover, .entry-title a:hover, .entry-meta a:hover, .entry-footer a:hover, .social-widget li a::before, .author-social a, .widget a:hover, blockquote:before { color: {$primary_color}; }"."\n";
+		$custom .= ".main-navigation a:hover, .main-navigation ul ul a:hover, .entry-title a:hover, .entry-meta a:hover, .entry-footer a:hover, .social-widget li a::before, .author-social a, .widget a:hover, blockquote:before { color: {$primary_color}; }"."\n";
 		$custom .= ".panel.widget .widget-title:after, .so-panel.widget .widget-title:after { border-color: {$primary_color}; }"."\n";	
 	}
 	//Site title
@@ -323,7 +323,7 @@ function moesia_custom_styles($custom) {
 	//Menu links
 	$menu_links_color = esc_html(get_theme_mod( 'menu_links_color' ));
 	if ( isset($menu_links_color) && ( $menu_links_color != '#ffffff' )) {
-		$custom .= ".main-navigation a { color: {$menu_links_color}; }"."\n";
+		$custom .= ".main-navigation a, .main-navigation ul ul a { color: {$menu_links_color}; }"."\n";
 	}	
 	//Footer background
 	$footer_bg = esc_html(get_theme_mod( 'footer_color' ));
