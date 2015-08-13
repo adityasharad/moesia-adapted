@@ -999,6 +999,18 @@ Structure
 .home-masonry .entry-title {
 	font-size: 26px;
 }
+/* Archive page header and description */
+header.page-header {
+	background-color: #fff;
+	border: 4px double #ebebeb;
+	padding: 30px;
+}
+header.page-header h1.page-title {
+	margin: 10px 0px;
+}
+.taxonomy-description {
+	padding: 0px;
+}
 /*--------------------------------------------------------------
 Page builder
 --------------------------------------------------------------*/
