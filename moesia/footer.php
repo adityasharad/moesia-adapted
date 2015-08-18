@@ -22,7 +22,9 @@
 		<div class="site-info container">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'moesia' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'moesia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %2$s by %1$s', 'moesia' ), 'aThemes', '<a href="http://athemes.com/theme/moesia">Moesia</a>' ); ?>
+			<?php printf( __( 'Website designed by Aditya Sharad.')); ?>
+			<span class="sep"> | </span>
+			<?php printf( __( 'This site\'s theme is an adaptation of %2$s by %1$s.', 'moesia' ), 'aThemes', '<a href="http://athemes.com/theme/moesia" target="_blank">Moesia</a>' ); ?>
 		</div><!-- .site-info -->
 		<?php tha_footer_bottom(); ?>
 	</footer><!-- #colophon -->
